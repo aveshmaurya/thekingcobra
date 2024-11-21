@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="snake.css" rel="stylesheet" type="text/css">
+    <title>The King Cobra</title>
+</head>
+<body>
+    <div class="box" id="box">
+        <h2 class="score">Score: <span id="score">0</span></h2>
+        <div class="game-box" id="game-box"></div>
+    </div>
+
+    <div class="popup" id="popup" style="display:none;">
+        <h2>Game Over!</h2>
+        <h3>Your Total Score: <span id="score1">0</span></h3>
+        <div class="round-scores"></div> <!-- To display round scores -->
+        <div class="buttons">
+   <a href="./index.html"> <button class="home" id="home-button" >Home</button> </a>
+   <a href="./index.html"> <button class="restart" id="restart" >Restart</button> </a>
+</div>
+    </div>
+
+    <!-- Start Popup -->
+    <div class="start-popup" id="start-popup" style="display: flex;">
+        <div class="start-content">
+            <h2 style="margin-top: 0px;">Welcome to The King Cobra!</h2>
+            <label for="player-name">Enter your name:</label>
+            <input type="text" id="player-name" placeholder="Your Name" required>
+            
+            <h3>Select Difficulty Level:</h3>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            
+            <button id="start-game">Start Game</button>
+        </div>
+    </div>
+
+    <script src="snake.js" defer></script>
+</body>
+</html>
